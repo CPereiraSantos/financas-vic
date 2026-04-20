@@ -1,0 +1,54 @@
+:root {
+    --bg: #050505;
+    --glass: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --accent: #6366f1;
+    --green: #10b981;
+    --red: #ef4444;
+    --text: #ffffff;
+    --text-dim: #94a3b8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+
+body { background: radial-gradient(circle at top left, #1e1b4b, #050505 50%); color: var(--text); padding: 40px 20px; }
+.container { max-width: 900px; margin: auto; }
+
+.glass { background: var(--glass); backdrop-filter: blur(15px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 25px; margin-bottom: 20px; }
+
+.saldo-wrapper { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+.input-row { display: flex; gap: 10px; margin-top: 10px; }
+
+input { background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); padding: 12px; border-radius: 10px; color: white; outline: none; }
+#saldo-disponivel { font-size: 1.2rem; width: 150px; }
+
+button { background: var(--accent); color: white; border: none; padding: 10px 20px; border-radius: 10px; cursor: pointer; font-weight: bold; }
+#saldo-restante { font-size: 2.5rem; }
+
+table { width: 100%; border-collapse: collapse; }
+td, th { padding: 12px; border-bottom: 1px solid var(--glass-border); text-align: left; }
+.btn-del { background: none; border: 1px solid var(--red); color: var(--red); padding: 4px 8px; border-radius: 6px; cursor: pointer; }
+
+.actions-cell {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.btn-edit {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--accent);
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    width: 90%;
+}
